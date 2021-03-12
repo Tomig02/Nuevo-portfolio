@@ -1,0 +1,28 @@
+#projects{
+    .wrapper{
+        width: 90%;
+        margin: auto;
+    }
+    .container{
+        width: 90%;
+        margin-left: 1rem;
+        .project{
+            margin-top: 2rem;
+            display: flex;
+            min-height: 17rem;
+            img{
+                width: 50%;
+            }
+            .content{
+                width: 50%;
+                padding: 1.5rem;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+            }
+            .btn-group{
+                display: flex;
+            }
+        }
+    }
+}

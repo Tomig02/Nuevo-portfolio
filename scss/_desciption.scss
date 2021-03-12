@@ -1,0 +1,33 @@
+#description{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .wrapper{
+        width: 90%;
+        color: $white;
+        h4{
+            margin: 1rem -1rem;
+        }
+        .container{
+            margin-left: 3rem;
+        }
+        .skills{
+            display: grid;
+            grid-template-columns: repeat(auto-fill, 8rem);
+            gap: 1rem;
+            justify-items: center;
+        }
+        .skills-item{
+            background: rgba($color: $white, $alpha: 0.1);
+            width: 100%;
+            padding: 0.2rem 0.5rem;
+            border-radius: 0.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            p{
+                margin-left: 0.5rem;
+            }
+        }
+    }
+}

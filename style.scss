@@ -1,0 +1,95 @@
+$white: #eaeaea;
+$black:  #1a1a1a;
+$main: #00AEE0;
+
+@import "./scss/general", "./scss/header", "./scss/nav", "./scss/desciption", "./scss/projects", "./scss/footer";
+
+.menu{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background: rgba($color: #000000, $alpha: 0.5);
+    z-index: 1;
+    animation: dropDown 0.5s ease forwards;
+    ul{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        font-size: 2em;
+    }
+}
+.closed{
+    display: none;
+}
+@keyframes dropDown{
+    from{
+        height: 0;
+    }
+    to{
+        height: 40vh;
+    }
+}
+
+
+html{
+    @media (max-width: 800px){
+        nav{
+            ul{
+                display: none;
+            }
+            .burger{
+                display: block;
+            }
+        }
+        header{
+            .wrapper{
+                justify-content: space-around;
+                flex-direction: column;
+                text-align: center;
+            }
+            .container{
+                margin: auto;
+            }
+        }
+        .project{
+            img{
+                width: 100% !important;
+            }
+            .btn-group{
+                margin-top: 1rem;
+            }
+            .content{
+                width: 100% !important;
+            }
+            flex-direction: column;
+        }
+        footer{
+            .wrapper{
+                flex-direction: column;
+                width: 100%;
+                .container{
+                    margin-bottom: 1rem;
+                    &:last-of-type{
+                        margin-bottom: 0;
+                    }
+                }
+            }
+        }
+    }
+
+    font-size: 0.7em;
+    @media (min-width: 1000px) {
+        font-size: 1.1em;
+    }
+    @media (min-width: 1500px) {
+        font-size: 1.5em;
+    }
+    @media (min-width: 2000px) {
+        font-size: 2.2em;
+    }
+    @media (min-width: 3000px) {
+        font-size: 3.5em;
+    }
+}

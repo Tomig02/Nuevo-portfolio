@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <title>Tomas Guardo - Front-end dev</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="./images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" 
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" 
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a class="link-styled" href="#description">Descripcion</a></li>
+            <li><a class="link-styled" href="#projects">Projectos</a></li>
+            <li><a class="link-styled" href="#contact">Contacto</a></li>
+        </ul>
+        <button class="burger">
+            <i class="fas fa-align-justify fa-2x"></i>
+        </button>
+    </nav>
+    <div class="menu closed">
+        <ul>
+            <li><a class="link-styled" href="#description">Descripcion</a></li>
+            <li><a class="link-styled" href="#projects">Projectos</a></li>
+            <li><a class="link-styled" href="#contact">Contacto</a></li>
+        </ul>
+    </div>
+    <header>
+        <div class="wrapper">
+            <div class="text">
+
+                <div class="container">
+
+                    <div class="blockMain"></div>
+                    <h1 class="my-name">Tomas Guardo.</h1>
+                </div>
+
+                <div class="container">
+
+                    <div class="blockWhite"></div>
+                    <h2 class="my-title">Desarrollador Front-End con gusto por el diseno</h2>
+                </div>
+            </div>
+
+            <div class="social">
+
+                <div class="container">
+
+                    <a class="social-icon" href="https://github.com/Tomig02"><i class="fab fa-github fa-2x"></i></a>
+                    <a class="social-icon" href="https://codepen.io/Tomig02"><i class="fab fa-codepen fa-2x"></i></a>
+                    <a class="social-icon" href=""><i class="fab fa-linkedin fa-2x"></i></a>
+                    <a class="social-icon" href=""><i class="far fa-file fa-2x"></i></a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="scroll">
+
+            <p>scroll</p>
+            <i class="fas fa-arrow-down"></i>
+        </div>
+    </header>
+    
+    <main>
+        <section id="description" class="hiden">
+            <div class="wrapper">
+
+                <h3>Descripcion</h3>
+
+                <div class="container">
+                    <h4>Sobre Mi</h4>
+                    <p>Soy Tomas Guardo, un desarrollador Front-End. Me encanta el stack MERN 
+                    (MongoDB, Express, React y Node), Pero mas me gusta enfrentarme a 
+                    los desafios de aprender nuevos lenguajes 
+                    y tecnologias para poder crear Sitios Web cada vez mejor.</p>
+                </div>
+                
+                <div class="container">
+
+                    <h4>Mis Conocimientos</h4>
+
+                    <div class="skills">
+
+                        <div class="skills-item"><i class="fab fa-html5 fa-lg"></i><p>HTML</p></div>
+                        <div class="skills-item"><i class="fab fa-css3 fa-lg"></i><p>CSS</p></div>
+                        <div class="skills-item"><i class="fab fa-js fa-lg"></i><p>JavaScript</p></div>
+                        <div class="skills-item"><i class="fab fa-react fa-lg"></i><p>React</p></div>
+                        <div class="skills-item"><i class="fab fa-node-js fa-lg"></i><p>Express</p></div>
+                        <div class="skills-item"><i class="fab fa-node-js fa-lg"></i><p>Node</p></div>
+                        <div class="skills-item"><i class="fab fa-git-square fa-lg"></i><p>Git</p></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="hiden">
+            <div class="wrapper">
+
+                <h3>Projectos</h3>
+
+                <div class="container">
+
+                    <div class="project">
+                        <img src="./images/screenshotEx1.jpg" alt="">
+                        <div class="content">
+                            <p>Sitio creado usando React, Material UI, Formik y yup para el Front-End y para 
+                                el Back-End use Node, Express, MongoDB y la API de TMDb para el contenido. 
+                                Con este proyecto profundice mi conocimiento en React y logre aprender sobre nuevas tecnologias
+                                y a usar Librerias de terceros.</p>
+                            <div class="btn-group">
+                                <a href="https://romantic-varahamihira-198acf.netlify.app/" class="btn-styled">Website <div><i class="fas fa-globe-americas"></i></div></a>
+                                <a href="https://github.com/Tomig02/Red-Peliculas" class="btn-styled">Code <div><i class="fas fa-code"></i></div></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project">
+                        <img src="./images/screenshotEx4.jpg" alt="">
+                        <div class="content">
+                            <p>Se trata de un sitio web para una cafeteria, esta hecho con html, 
+                                css y javascript como front-end y Node, Express y MongoDB como back-end. <br/>
+                                Con este proyecto practique y aprendi sobre la creacion de sitios con paginas multiples,
+                                ademas de aprender sobre el server side rendering.</p>
+                            <div class="btn-group">
+                                <a href="https://website-coffee-express.herokuapp.com/" class="btn-styled">Website <div><i class="fas fa-globe-americas"></i></div></a>
+                                <a href="https://github.com/Tomig02/full-website-coffee" class="btn-styled">Code <div><i class="fas fa-code"></i></div></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project">
+                        <img src="./images/screenshotEx2.jpg" alt="">
+                        <div class="content">
+                            <p>Sitio web representando una tienda de articulos y calzado para corredores. 
+                                para este proyecto use solo HTML, CSS(SCSS) y JavaScript. <br/> Con este proyecto pude 
+                                profundizar y ampliar mis conocimientos en los lenguajes fundamentales.</p>
+                            <div class="btn-group">
+                                <a href="https://clever-almeida-cdc596.netlify.app/" class="btn-styled">Website <div><i class="fas fa-globe-americas"></i></div></a>
+                                <a href="https://github.com/Tomig02/Sports-Shop-Website" class="btn-styled">Code <div><i class="fas fa-code"></i></div></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project">
+                        <img src="./images/screenshotEx3.jpg" alt="">
+                        <div class="content">
+                            <p>Este sitio tambien es un sitio hecho solo con HTML, CSS y JavaScript. Se trata de 
+                                un sitio para una empresa de marketing. <br/> Este proyecto me ayudo a dar mis primeros 
+                                pasos como desarrollador.</p>
+                            <div class="btn-group">
+                                <a href="https://inspiring-cray-f59f4d.netlify.app/" class="btn-styled">Website <div><i class="fas fa-globe-americas"></i></div></a>
+                                <a href="https://github.com/Tomig02/Sitio-Marketing" class="btn-styled">Code <div><i class="fas fa-code"></i></div></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="./javascript/scrollAnim.js"></script>
+    <footer id="contact">
+        <hr>
+        <div class="wrapper">
+            <div class="container"><i class="far fa-envelope fa-2x"></i><h4>guardotomas02@gmail.com</h4></div>
+            <div class="container"><i class="fas fa-phone fa-2x"></i><h4>+54 02271410181</h4></div>
+        </div>
+        
+    </footer>
+    <script src="./javascript/show-overlay.js"></script>
+</body>
+</html>
