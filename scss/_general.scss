@@ -83,6 +83,9 @@ section{
 .hiden{
     opacity: 0;
 }
+.hide{
+    display: none;
+}
 .animate{
     opacity: 1;
     transform: translateY(0);

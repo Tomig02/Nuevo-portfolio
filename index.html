@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
+    <meta name="description" content="Consegui tu nueva pagina web">
     <title>Tomas Guardo - Front-end dev</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="./images/web-programming.png" type="image/x-icon">
@@ -57,7 +57,7 @@
                     <a class="social-icon" href="https://github.com/Tomig02"><i class="fab fa-github fa-2x"></i></a>
                     <a class="social-icon" href="https://codepen.io/Tomig02"><i class="fab fa-codepen fa-2x"></i></a>
                     <a class="social-icon" href="https://www.linkedin.com/in/tomasguardo"><i class="fab fa-linkedin fa-2x"></i></a>
-                    <a class="social-icon" href="https://drive.google.com/file/d/18ZBO6MYSfQtmWUEAdIZCx3MtkqkC72qu/view?ths=true"><i class="far fa-file fa-2x"></i></a>
+                    <a class="social-icon" href="https://drive.google.com/file/d/1IRxsw2XY6tmVsh2Rwfze52bGZcszWvB3/view?usp=sharing"><i class="far fa-file fa-2x"></i></a>
                 </div>
             </div>
         </div>
@@ -167,12 +167,34 @@
     </main>
     <script src="./javascript/scrollAnim.js"></script>
     <footer id="contact">
-        <hr>
+        <hr> 
         <div class="wrapper">
-            <div class="container"><i class="far fa-envelope fa-2x"></i><h4>guardotomas02@gmail.com</h4></div>
+            <div class="container">
+                <form class="contact" action="">
+                    <div>
+                        <label for="name">Nombre</label>
+                        <input id="name" name="name" type="text">
+                    </div>
+                    <div>
+                        <label for="name">Apellido</label>
+                        <input id="surname" name="surname" type="text">
+                    </div>
+                    <div>
+                        <label for="name">Mensaje</label>
+                        <textarea id="message" name="message" rows="4" cols="50"></textarea>
+                    </div>
+                    <button id="submit" class="btn-styled">Send<div><i class="fas fa-envelope"></i></div></button>
+                </form>
+            </div>
             <div class="container"><i class="fas fa-phone fa-2x"></i><h4>+54 02271410181</h4></div>
         </div>
-        
+        <div class="pop-up hide">
+            <div>
+                <i class="fas fa-smile fa-4x"></i>
+                <p>Gracias por ponerte en contacto, el mensaje sera respondido pronto</p>
+            </div>
+        </div>
+        <script src="./javascript/show-pop-up.js"></script>
     </footer>
     <script src="./javascript/show-overlay.js"></script>
 </body>

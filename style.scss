@@ -2,7 +2,7 @@ $white: #eaeaea;
 $black:  #1a1a1a;
 $main: #00AEE0;
 
-@import "./scss/general", "./scss/header", "./scss/nav", "./scss/desciption", "./scss/projects", "./scss/footer";
+@import "./scss/header", "./scss/nav", "./scss/desciption", "./scss/projects", "./scss/footer", "./scss/general";
 
 .menu{
     position: absolute;
@@ -79,7 +79,7 @@ html{
         }
     }
 
-    font-size: 0.7em;
+    font-size: 0.75em;
     @media (min-width: 1000px) {
         font-size: 1.1em;
     }
@@ -93,3 +93,4 @@ html{
         font-size: 3.5em;
     }
 }
+

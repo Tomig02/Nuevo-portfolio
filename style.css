@@ -1,96 +1,3 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: "Poppins", sans-serif;
-  background: #1a1a1a;
-  color: #eaeaea;
-}
-
-ul {
-  list-style: none;
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-button {
-  border: none;
-  outline: none;
-  background: none;
-  cursor: pointer;
-}
-
-.btn-styled {
-  background: #eaeaea;
-  padding: 0.5rem 0.8rem;
-  padding-right: 2.5rem;
-  border-radius: 0.5rem;
-  font-weight: bold;
-  position: relative;
-  overflow: hidden;
-  display: block;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  color: #1a1a1a;
-  font-size: 0.8rem;
-  margin-right: 1rem;
-}
-.btn-styled div {
-  position: absolute;
-  right: 0;
-  top: 0;
-  background: #00AEE0;
-  width: 30%;
-  font-size: 1rem;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: all 0.2s ease;
-}
-.btn-styled:hover div {
-  width: 100%;
-}
-
-.link-styled {
-  position: relative;
-}
-.link-styled::after {
-  content: "";
-  width: 0;
-  height: 0.2rem;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  background: #00AEE0;
-  transition: width 0.2s ease;
-}
-.link-styled:hover::after {
-  width: 30%;
-}
-
-section {
-  padding-top: 7rem;
-  transition: all 0.5s ease-in;
-  transform: translateY(5rem);
-}
-
-.hiden {
-  opacity: 0;
-}
-
-.animate {
-  opacity: 1;
-  transform: translateY(0);
-}
-
 header {
   height: 90vh;
   display: flex;
@@ -342,14 +249,172 @@ footer .wrapper {
   width: 80%;
   margin: 4rem 0;
   display: flex;
-  justify-content: space-around;
 }
 footer .wrapper .container {
+  margin: 2rem 0;
+  width: 50%;
   display: flex;
   align-items: center;
+  justify-content: center;
+  margin: auto;
 }
-footer .wrapper .container i {
+footer .wrapper .container > i {
   margin-right: 1rem;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contact div {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+input[type=text], textarea {
+  font-size: 1.5rem;
+  padding: 0.4rem 0.2rem;
+  border: 0.2rem solid #00AEE0;
+  width: 100%;
+  background: none;
+  margin: 0.7rem;
+  outline: none;
+  color: white;
+}
+
+textarea {
+  resize: none;
+}
+
+small {
+  margin: 0.5rem;
+  width: 90%;
+  text-align: center;
+}
+
+.pop-up {
+  background: rgba(0, 0, 0, 0.4);
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  transition: opacity 1s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.pop-up div {
+  transition: opacity 1s ease;
+  padding: 2rem;
+  text-align: center;
+  height: 30%;
+  background: #eaeaea;
+  color: black;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: #1a1a1a;
+  color: #eaeaea;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  border: none;
+  outline: none;
+  background: none;
+  cursor: pointer;
+}
+
+.btn-styled {
+  background: #eaeaea;
+  padding: 0.5rem 0.8rem;
+  padding-right: 2.5rem;
+  border-radius: 0.5rem;
+  font-weight: bold;
+  position: relative;
+  overflow: hidden;
+  display: block;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  color: #1a1a1a;
+  font-size: 0.8rem;
+  margin-right: 1rem;
+}
+.btn-styled div {
+  position: absolute;
+  right: 0;
+  top: 0;
+  background: #00AEE0;
+  width: 30%;
+  font-size: 1rem;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+}
+.btn-styled:hover div {
+  width: 100%;
+}
+
+.link-styled {
+  position: relative;
+}
+.link-styled::after {
+  content: "";
+  width: 0;
+  height: 0.2rem;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: #00AEE0;
+  transition: width 0.2s ease;
+}
+.link-styled:hover::after {
+  width: 30%;
+}
+
+section {
+  padding-top: 7rem;
+  transition: all 0.5s ease-in;
+  transform: translateY(5rem);
+}
+
+.hiden {
+  opacity: 0;
+}
+
+.hide {
+  display: none;
+}
+
+.animate {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .menu {
@@ -392,7 +457,7 @@ footer .wrapper .container i {
   }
 }
 html {
-  font-size: 0.7em;
+  font-size: 0.75em;
 }
 @media (max-width: 800px) {
   html nav ul {
